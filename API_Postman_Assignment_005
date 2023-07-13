@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "5869aeb4-5ed8-4960-b771-d2ba92f572e7",
+		"name": "Assign05",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27716636",
+		"_collection_link": "https://grey-water-901020.postman.co/workspace/Final-Assignment~25b06ddb-e425-4ba1-bcf1-13de96ceb17b/collection/27716636-5869aeb4-5ed8-4960-b771-d2ba92f572e7?action=share&creator=27716636&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "uthcheck",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "@tt!tude",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Uname001",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/login",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
