@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "8c0f44ac-b6a3-40c4-ae76-ab538c21ed8b",
+		"name": "PUT serviceusing Global variable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27716636",
+		"_collection_link": "https://grey-water-901020.postman.co/workspace/Final-Assignment~25b06ddb-e425-4ba1-bcf1-13de96ceb17b/collection/27716636-8c0f44ac-b6a3-40c4-ae76-ab538c21ed8b?action=share&creator=27716636&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "PUTcall",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 9223372016900013000,\r\n  \"category\": {\r\n    \"id\": 20021,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"{{status}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
