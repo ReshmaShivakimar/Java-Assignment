@@ -1,0 +1,16 @@
+Feature: Validate if a pet is deleted
+
+  Background:
+    * url 'https://petstore.swagger.io/v2/pet/'
+
+  Scenario Outline: Verify if pet with a specific ID exists
+  #* def petId = 100
+    Given path '<petId>'
+    When method DELETE
+    Then status 200
+  And match response == { code: 200,type: 'unknown',message: '<petId>' }
+    And print response
+
+Examples:
+  | petId |
+  | 100   |
