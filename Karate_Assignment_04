@@ -1,0 +1,20 @@
+Feature: Match Pet ID , Pet Name and Status coming from response
+
+        Background:
+                * url 'https://petstore.swagger.io/v2/pet/'
+
+        Scenario Outline: Verify pet details
+#And path petId = 100
+                Given path '<petId>'
+
+                When method GET
+                Then status 200
+                And match response.id == 100
+                And match response.name == 'Doggie'
+                And match response.status == 'available'
+                And print response
+
+
+                Examples:
+                        |petId|
+                        | 100 |
